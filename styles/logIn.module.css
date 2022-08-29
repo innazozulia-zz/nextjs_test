@@ -1,37 +1,59 @@
 .container {
     display: flex;
     justify-content: space-around;
-    max-width: 800px;
+    max-width: 1120px;
     margin: 0 auto;
     flex-wrap: wrap;
+    border-radius: 20px;
+    background: #FFBD9E;
+    padding: 0 15px;
+    margin-bottom: 192px;
 }
 
 .description__container {
-    width: 400px;
+    margin-top: 168px;
+    width: 389px;
 }
 
-.logIn__container {
-    display: flex;
-    flex-direction: column;
-    background: rgb(236, 208, 227);
+.description__container h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 40px;
+    color: #1E1A20;
 }
 
-.input {
-    border: none;
-    border-radius: 20px;
-    background: #fff;
-    padding: 10px;
+.description__container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 168px;
+    color: #1E1A20;
+
+
 }
 
-.input:not(:last-child) {
-    margin-bottom: 20px;
-}
+@media screen and (max-width: 746px) {
+    .container {
+        margin-bottom: 100px;
+    }
 
-.btn {
-    border: none;
-    background: rgb(241, 152, 104);
-    border-radius: 20px;
-    padding: 10px;
-    text-transform: uppercase;
-    color: #fff;
+    .description__container {
+        margin-top: 42px;
+        width: 375px;
+    }
+
+    .description__container h3 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .description__container p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+
 }

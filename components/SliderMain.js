@@ -34,41 +34,54 @@ const SliderMain = () => {
     autoplaySpeed: 2000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1100,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      //   {
-      //     breakpoint: 620,
-      //     settings: {
-      //       slidesToShow: 2,
-      //       slidesToScroll: 1,
-      //     },
-      //   },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+    // responsive: [
+
+    // ],
   };
   return (
     <div className={style.slider__container}>
       <Slider {...settings}>
-        <div className={style.slider__item}>
-          <img src="connect/item-1.jpg" />
+        <div className={style.slider__item_one}>
+          <div className={style.slider}>
+            <div className={style.slider__content}>
+              <h3> Travel In Japan: The True Experience</h3>
+              <p>
+                When pattern is mentioned in interior design, it is easy to
+                asso- ciate it with a geometric patterned wallpaper or colourful
+                prints on interior fabrics.
+              </p>
+            </div>
+            <div className={style.slider__cover}>
+              <img className={style.cover} src="sliderOne/slider_cover.png" />
+              <img className={style.shadow} src="sliderOne/slider_shadow.png" />
+            </div>
+          </div>
+          {/* <img src="sliderOne/item-1.png" /> */}
         </div>
         <div>
-          <img src="connect/item-2.jpg" />
+          <div className={style.slider__item_two}>
+            <div className={style.slider}>
+              <div className={style.slider__content}>
+                <h3> Travel In Japan: The True Experience</h3>
+                <p>
+                  When pattern is mentioned in interior design, it is easy to
+                  asso- ciate it with a geometric patterned wallpaper or
+                  colourful prints on interior fabrics.
+                </p>
+              </div>
+              <div className={style.slider__cover}>
+                <img className={style.cover} src="sliderOne/slider_cover.png" />
+                <img
+                  className={style.shadow}
+                  src="sliderOne/slider_shadow.png"
+                />
+              </div>
+            </div>
+          </div>
+          {/* <img src="sliderOne/item-2.png" /> */}
         </div>
         <div>
-          <img src="connect/item-3.jpg" />
+          <img src="sliderOne/item-3.png" />
         </div>
       </Slider>
     </div>

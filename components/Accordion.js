@@ -1,5 +1,7 @@
 import React from "react";
 
+import style from "../styles/accordion.module.css";
+
 const Accordion = () => {
   const [selected, setSelected] = React.useState(null);
 
@@ -7,15 +9,17 @@ const Accordion = () => {
     {
       question: "What can i do to protect our planet?",
       answer:
-        "Not to make an open fire in nature and to clean up letter, not to pollute open water bodies, to switch to alternative energy sources, to reduce the use of non-renewable resources",
+        "Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources",
     },
     {
       question: "How to save nature ecologe?",
-      answer: "lihnksdjnc sbcskubc hvbds kjsbdc kjsdbsdc ksjdbsck",
+      answer:
+        "Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources",
     },
     {
       question: "What is nature convertation?",
-      answer: "lihnksdjnc sbcskubc hvbds kjsbdc kjsdbsdc ksjdbsck",
+      answer:
+        "Not to make an open fire in nature and to clean up litter; not to pollute open water bodies; to switch to alternative energy sources; to reduce the use of non-renewable resources",
     },
   ];
 
@@ -26,17 +30,23 @@ const Accordion = () => {
     setSelected(i);
   };
   return (
-    <div className="container">
-      <div className="accordion">
+    <div className={style.container}>
+      <div className={style.accordion}>
         {data.map((item, i) => (
-          <div key={i} className="item">
-            <div className="title" onClick={() => toggle(i)}>
-              <h2>{item.question}</h2>
-              <span>{selected === i ? "-" : "+"}</span>
+          <div key={i} className={style.item}>
+            <div className={style.title} onClick={() => toggle(i)}>
+              <div className={style.question}>
+                <h2>{item.question}</h2>
+              </div>
+              <div>
+                <span className={style.toggle}>
+                  {selected === i ? "-" : "+"}
+                </span>
+              </div>
             </div>
 
             <div className={selected === i ? "content__show" : "content"}>
-              {item.answer}
+              <p className={style.answer}>{item.answer}</p>
             </div>
           </div>
         ))}

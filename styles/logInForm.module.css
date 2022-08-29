@@ -1,0 +1,80 @@
+.logIn__container {
+    display: flex;
+    flex-direction: column;
+    background: #F7F3F4;
+    width: 422px;
+    height: 352px;
+    border-radius: 16px;
+    margin-top: 104px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.element__one {
+    position: absolute;
+    width: 72px;
+    height: 44px;
+    right: -15px;
+    top: -12px;
+}
+
+.element__two {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    top: 49px;
+    right: -18px;
+
+}
+
+.logIn__container h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.input {
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    padding: 10px;
+    width: 312px;
+    margin: 0 auto;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: none;
+    background: #F2726C;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 312px;
+    height: 48px;
+    margin: 0 auto;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #f66059;
+    transition: all 0.2s ease-out;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width:856px) {
+    .logIn__container {
+        width: 339px;
+        height: 328px;
+        margin-bottom: 56px;
+    }
+
+
+}

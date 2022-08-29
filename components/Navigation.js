@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
+// import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 
 import style from "../styles/navigation.module.css";
@@ -36,13 +36,17 @@ const Navigation = () => {
             <a>Team</a>
           </Link>
         </div>
-        <div>
+        <div className={style.btn}>
           <button className={style.btn__apply}>Apply</button>
         </div>
       </div>
 
       <button className={style.btn__icon} onClick={() => setNavbar(!navbar)}>
-        {navbar ? <IoMdClose className={style.close} /> : <GiHamburgerMenu />}
+        {navbar ? (
+          <IoMdClose className={style.close} />
+        ) : (
+          <img src="burger.png" />
+        )}
       </button>
     </div>
   );

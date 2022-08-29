@@ -1,26 +1,157 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.wrapper {
+    background: #F7F3F4;
+    margin-bottom: 65px;
 }
 
+.container {
+    display: flex;
+    max-width: 1200px;
 
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.left__side {
+    margin-top: 180px;
+    width: 100%;
+    /* margin-left: 100px; */
+}
+
+.image__text img {
+    width: 542px;
+    margin-bottom: 59px;
+    overflow: hidden;
+}
+
+.description {
+    width: 448px;
+    margin-bottom: 48px;
+}
+
+.description p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
 
 .search {
     position: relative;
+    margin-bottom: 129px;
 }
 
 
 .input {
     border: none;
-    padding: 10px 80px 10px 10px;
-    border-radius: 20px;
+    padding: 20px 5px 20px 36px;
+    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    border-radius: 40px;
+    width: 405px;
 
+}
+
+.label {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    top: 4px;
+    left: 10px;
 }
 
 .btn__search {
     position: absolute;
-    top: 7px;
-    left: 176px;
+    top: 4px;
+    left: 278px;
     border: none;
+    width: 122px;
+    height: 48px;
+    background: #F2726C;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.btn__search:hover {
+    /* filter: brightness(80%); */
+    background-color: #f66059;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(2px);
+    transition: all 0.2s ease-out;
+}
+
+.rigth__side {
+    /* max-width: 320px; */
+    margin-top: 140px;
+    position: relative;
+}
+
+.image__main {
+    overflow: hidden;
+    width: 320px;
+    height: 494px;
+}
+
+.image__members {
+    position: absolute;
+    overflow: hidden;
+    width: 278px;
+    height: 320px;
+    top: 257px;
+    left: -130px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .rigth__side {
+        margin-top: 0;
+    }
+
+    .image__members {
+        width: 216px;
+        height: 254px;
+        left: 1px;
+    }
+
+    .search {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image__text img {
+        width: 300px;
+    }
+
+    .description {
+        width: 310px;
+    }
+
+    .search {
+        width: 310px;
+
+    }
+
+    .btn__search {
+        top: 4px;
+        left: 200px;
+    }
+
+    .input {
+        width: 329px
+    }
+
+
 }

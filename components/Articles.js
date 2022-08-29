@@ -4,8 +4,8 @@ const Articles = () => {
   return (
     <div className={style.container}>
       <div className={style.article__item}>
-        <div>
-          <img src="" alt="stories" />
+        <div className={style.article__img}>
+          <img src="articles/item-1.png" alt="stories" />
         </div>
         <div className={style.description}>
           <p className={style.hash}># Stories</p>
@@ -13,22 +13,22 @@ const Articles = () => {
           <a href="#">see more</a>
         </div>
       </div>
-      <div className={style.article__item}>
-        <div>
-          <img src="" alt="video tutor" />
+      <div className={style.article__item__video}>
+        <div className={style.article__video}>
+          <img src="articles/item-2.png" alt="video tutor" />
         </div>
         <div className={style.description}>
-          <p className={style.hash}># video tutor</p>
-          <h3 className={style.title}>Helping Wind Turtles</h3>
+          <p className={style.hash}># VideoTutor</p>
+          <h3 className={style.title__video}>Helping Wind Turtles</h3>
           <a href="#">see more</a>
         </div>
       </div>
       <div className={style.article__item}>
-        <div>
-          <img src="" alt="photostory" />
+        <div className={style.article__img}>
+          <img src="articles/item-3.png" alt="photostory" />
         </div>
         <div className={style.description}>
-          <p className={style.hash}># photostory</p>
+          <p className={style.hash}># Photostory</p>
           <h3 className={style.title}>Threats of Indusrial World</h3>
           <a href="#">see more</a>
         </div>

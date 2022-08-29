@@ -17,12 +17,13 @@ const Home = () => {
       <Navigation />
       {/* <MainSection /> */}
       {/* <Articles /> */}
+
       {/* <SliderMain /> */}
-      {/* <OurTeam /> */}
+      <OurTeam />
       {/* <Title /> */}
       {/* <LogIn /> */}
       {/* <GetStartedInformation /> */}
-      <SliderFooter />
+      {/* <SliderFooter /> */}
       {/* <Footer /> */}
     </div>
   );
