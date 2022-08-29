@@ -1,0 +1,15 @@
+.assets {
+    display: flex;
+    border-top: 2px solid black;
+    max-width: 500px;
+}
+
+.assets__item {
+    display: flex;
+    flex-direction: row;
+}
+
+.assets__text {
+    text-transform: uppercase;
+    font-size: 12px;
+}

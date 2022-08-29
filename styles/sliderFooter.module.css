@@ -1,0 +1,12 @@
+.slider__container {
+    background: rgb(242, 163, 120);
+}
+
+.img {
+    width: 50px !important;
+}
+
+.description {
+    width: 250px;
+    text-align: center;
+}

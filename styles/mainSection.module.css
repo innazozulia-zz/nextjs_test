@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.search {
+    position: relative;
+}
+
+
+.input {
+    border: none;
+    padding: 10px 80px 10px 10px;
+    border-radius: 20px;
+
+}
+
+.btn__search {
+    position: absolute;
+    top: 7px;
+    left: 176px;
+    border: none;
+}

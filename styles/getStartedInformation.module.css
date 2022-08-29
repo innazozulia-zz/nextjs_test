@@ -1,0 +1,12 @@
+.content {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1290px;
+    padding: 0 10px;
+}
+
+.text {
+    width: 300px
+}

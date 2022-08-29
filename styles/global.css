@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 500px;
+}
+
+.item {
+    border-bottom: 2px solid #ccc;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.content {
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    max-height: 0;
+}
+
+.content__show {
+    /* max-width: 600; */
+    transition: all 0.5s ease-in-out;
+}

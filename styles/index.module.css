@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.container {
+    max-width: 1440px;
+    background: #F7F3F4;
+    padding: 0 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: block;
+    }
+
+}

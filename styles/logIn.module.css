@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.description__container {
+    width: 400px;
+}
+
+.logIn__container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(236, 208, 227);
+}
+
+.input {
+    border: none;
+    border-radius: 20px;
+    background: #fff;
+    padding: 10px;
+}
+
+.input:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.btn {
+    border: none;
+    background: rgb(241, 152, 104);
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #fff;
+}

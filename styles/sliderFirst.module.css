@@ -1,0 +1,30 @@
+.slider__container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.slider__item {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next__arrow {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+.prev__arrow {
+    position: absolute;
+    font-size: 30px;
+    color: #333;
+    top: 120px;
+    left: -44px;
+    cursor: pointer;
+}
