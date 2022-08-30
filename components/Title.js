@@ -6,6 +6,7 @@ const Title = () => {
   return (
     <div className={style.container}>
       <div className={style.relative__desktop}>
+        <img className={style.title__bg} src="titleComponent/bg.png" />
         <h5 className={style.title}>
           The scale of the challenges facing our planet can seem daunting, but
           we can all do something.
