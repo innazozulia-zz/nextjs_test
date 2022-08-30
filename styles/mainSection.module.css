@@ -117,7 +117,9 @@
 
     .rigth__side {
         margin-top: 0;
+        overflow: hidden;
     }
+
 
     .image__members {
         width: 216px;
@@ -135,23 +137,40 @@
         width: 300px;
     }
 
+
+
     .description {
         width: 310px;
     }
 
     .search {
-        width: 310px;
+        width: 290px;
 
     }
 
     .btn__search {
         top: 4px;
-        left: 200px;
+        left: 192px;
     }
 
     .input {
-        width: 329px
+        width: 318px
     }
 
 
+}
+
+@media screen and (max-width: 420px) {
+    .image__main {
+        width: 100%;
+        position: relative;
+        right: -141px;
+    }
+
+    .image__members {
+        width: 216px;
+        height: 254px;
+        left: 11px;
+        top: 229px;
+    }
 }

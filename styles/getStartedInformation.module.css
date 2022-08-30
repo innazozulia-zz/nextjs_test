@@ -9,7 +9,7 @@
 }
 
 .text {
-    width: 480px
+    width: 480px;
 }
 
 .text h2 {
@@ -20,12 +20,16 @@
     margin-bottom: 40px;
 }
 
-.description {
+.description p {
     width: 423px;
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
-    margin-bottom: 59px;
+    /* margin-bottom: 59px; */
+}
+
+.description {
+    margin-bottom: 56px;
 }
 
 .btn {
@@ -55,4 +59,21 @@
         margin-bottom: 48px;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .text h2 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .description p {
+        width: 312px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .description {
+        margin-bottom: 32px;
+    }
 }

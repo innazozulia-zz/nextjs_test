@@ -34,9 +34,19 @@ const SliderMain = () => {
     autoplaySpeed: 2000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // responsive: [
-
-    // ],
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          nextArrow: false,
+          prevArrow: false,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     <div className={style.slider__container}>
@@ -56,32 +66,38 @@ const SliderMain = () => {
               <img className={style.shadow} src="sliderOne/slider_shadow.png" />
             </div>
           </div>
-          {/* <img src="sliderOne/item-1.png" /> */}
         </div>
-        <div>
-          <div className={style.slider__item_two}>
-            <div className={style.slider}>
-              <div className={style.slider__content}>
-                <h3> Travel In Japan: The True Experience</h3>
-                <p>
-                  When pattern is mentioned in interior design, it is easy to
-                  asso- ciate it with a geometric patterned wallpaper or
-                  colourful prints on interior fabrics.
-                </p>
-              </div>
-              <div className={style.slider__cover}>
-                <img className={style.cover} src="sliderOne/slider_cover.png" />
-                <img
-                  className={style.shadow}
-                  src="sliderOne/slider_shadow.png"
-                />
-              </div>
+        <div className={style.slider__item_two}>
+          <div className={style.slider}>
+            <div className={style.slider__content}>
+              <h3>Helping Wild Turtles To Travel In Japan</h3>
+              <p>
+                The scale of the challenges facing our planet can seem daunting,
+                but we can all do something. Challenges facing our planet can
+                seem daunting, but we can all do something.
+              </p>
+            </div>
+            <div className={style.slider__cover}>
+              <img className={style.cover} src="sliderOne/slider_cover.png" />
+              <img className={style.shadow} src="sliderOne/slider_shadow.png" />
             </div>
           </div>
-          {/* <img src="sliderOne/item-2.png" /> */}
         </div>
-        <div>
-          <img src="sliderOne/item-3.png" />
+        <div className={style.slider__item_three}>
+          <div className={style.slider}>
+            <div className={style.slider__content}>
+              <h3>Threats of Modern Indusrial World </h3>
+              <p>
+                The scale of the challenges facing our planet can seem daunting,
+                but we can all do something. Easy to asso- ciate it with a
+                geometric patterned wallpaper.
+              </p>
+            </div>
+            <div className={style.slider__cover}>
+              <img className={style.cover} src="sliderOne/slider_cover.png" />
+              <img className={style.shadow} src="sliderOne/slider_shadow.png" />
+            </div>
+          </div>
         </div>
       </Slider>
     </div>

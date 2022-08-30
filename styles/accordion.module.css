@@ -1,5 +1,5 @@
 .container {
-    width: 536px;
+    max-width: 536px;
 
 }
 
@@ -47,11 +47,26 @@
 }
 
 @media screen and (max-width: 700px) {
-    .question h2 {
-        width: 339px;
-    }
-
     .container {
         margin-bottom: 100px;
+    }
+
+    .question h2 {
+        width: 339px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .answer {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+
+}
+
+@media screen and (max-width: 550px) {
+    .question h2 {
+        max-width: 270px;
     }
 }

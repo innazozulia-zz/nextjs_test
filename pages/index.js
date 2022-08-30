@@ -15,16 +15,20 @@ const Home = () => {
   return (
     <div className={style.container}>
       <Navigation />
-      {/* <MainSection /> */}
-      {/* <Articles /> */}
+      <MainSection />
+      <Articles />
 
-      {/* <SliderMain /> */}
+      <SliderMain />
+
       <OurTeam />
-      {/* <Title /> */}
-      {/* <LogIn /> */}
-      {/* <GetStartedInformation /> */}
+      <Title />
+
+      <LogIn />
+      <GetStartedInformation />
+
       {/* <SliderFooter /> */}
-      {/* <Footer /> */}
+
+      <Footer />
     </div>
   );
 };

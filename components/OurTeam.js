@@ -9,7 +9,7 @@ const OurTeam = () => {
           Learn more about how you can save our planet's nature
         </p>
       </div>
-      <div className={style.team__container}>
+      <div className={style.team__container_desktop}>
         <div className={style.team__item__one}>
           <img
             className={style.img__photo}
@@ -21,13 +21,20 @@ const OurTeam = () => {
             src="teamComponent/line_left.png"
             alt="line"
           />
-        </div>
-        <div className={style.team__item__two}>
           <img
-            className={style.img__photo_two}
-            src="teamComponent/item-2.png"
-            alt="our team"
+            className={style.line_left__mobile}
+            src="teamComponent/line_left__mobile.png"
+            alt="line"
           />
+        </div>
+        <div className={style.team__container__wrapper_two}>
+          <div className={style.team__item__two}>
+            <img
+              className={style.img__photo_two}
+              src="teamComponent/item-2.png"
+              alt="our team"
+            />
+          </div>
         </div>
         <div className={style.team__item__three}>
           <img
@@ -38,6 +45,11 @@ const OurTeam = () => {
           <img
             className={style.line__right}
             src="teamComponent/line_right.png"
+            alt="line"
+          />
+          <img
+            className={style.line__right__mobile}
+            src="teamComponent/line__right__mobile.png"
             alt="line"
           />
         </div>

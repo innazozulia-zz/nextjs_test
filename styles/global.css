@@ -34,3 +34,21 @@ body {
     /* max-width: 600; */
     transition: all 0.5s ease-in-out;
 }
+
+
+.slick-dots li.slick-active button:before {
+    background: #000 !important;
+    width: 11px !important;
+    height: 11px !important;
+    border-radius: 15px;
+    color: #000 !important;
+}
+
+.slick-dots li button:before {
+    border: 1px solid #000 !important;
+    border-radius: 15px;
+    background: #fff !important;
+    color: #fff !important;
+    width: 11px !important;
+    height: 11px !important;
+}

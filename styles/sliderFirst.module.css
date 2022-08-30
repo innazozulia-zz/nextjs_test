@@ -16,41 +16,59 @@
 }
 
 .slider__item_two {
-    margin: 0 auto;
-    /* position: relative; */
-    /* display: flex; */
-    align-items: center;
     background: #FFADAD;
+    align-items: center;
     border-radius: 20px;
     width: 992px;
     height: 512px;
+    margin: 0 auto;
+}
+
+.slider__item_three {
+    background: #CBCBFF;
+    align-items: center;
+    border-radius: 20px;
+    width: 992px;
+    height: 512px;
+    margin: 0 auto;
+
 }
 
 .slider {
     display: flex;
     justify-content: space-between;
     margin-top: 98px;
-    padding: 20px;
+    /* flex-wrap: wrap; */
 }
 
 .slider__content {
-    width: 384px
+    width: 389px;
 }
 
 .slider__content h3 {
     font-size: 40px;
     font-weight: 700;
     line-height: 56px;
+    color: #222433;
+
+}
+
+.slider__item_three .slider .slider__content h3 {
+    max-width: 372px;
+}
+
+.slider__content p {
+    color: #1E1A20;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 .slider__content {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    margin-bottom: 80px;
-    /* border-radius: 20px;
-    width: 992px;
-    height: 512px; */
+    margin: 0 40px 80px 60px;
 
 }
 
@@ -72,11 +90,61 @@
     cursor: pointer;
 }
 
+.slider__cover {
+    margin: 0 60px;
+}
+
 .cover {
     position: relative;
+    top: -18px;
+    left: -78px;
 }
 
 .shadow {
     position: absolute;
-    top: 20px;
+    top: 144px;
+}
+
+@media screen and (max-width: 900px) {
+    .slider__cover {
+        margin: 0 7px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .slider {
+        flex-wrap: wrap;
+        margin-top: 41px;
+    }
+
+    .slider__item_one,
+    .slider__item_two,
+    .slider__item_three {
+        height: 599px;
+    }
+
+    .slider__content {
+        width: 100%;
+        margin: 0px 20px 50px 20px;
+    }
+
+    .slider__content h3 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .slider__content p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .cover {
+        top: -18px;
+        left: 30px;
+    }
+
+    .shadow {
+        top: 320px;
+    }
 }
