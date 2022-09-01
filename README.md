@@ -10,5 +10,10 @@ Technologies: NextJS
 
 npm packages :
 
--styles:  module, react-icons;
--slider:  react-slick, react-carousel;
+1.styles:  module, react-icons;
+2.slider:  react-slick, react-carousel;
+
+
+Easter Egg : 
+- click on the Logo image and you will see a greeting
+
