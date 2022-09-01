@@ -18,8 +18,6 @@
     display: flex;
     flex-direction: row;
     padding: 20px 10px;
-
-
 }
 
 .nav__flex {
@@ -61,7 +59,6 @@
     margin-right: 30px;
     color: rgb(97, 96, 96);
     transition: all 0.2s ease-in-out;
-
 }
 
 .link__item a:hover {
@@ -114,7 +111,6 @@
     }
 
     .close {
-        /* position: absolute; */
         bottom: 152px;
         right: 6px;
 
@@ -126,7 +122,6 @@
 
     .link__item {
         margin-bottom: 35px;
-        /* margin-right: 0; */
     }
 
     .navigation {
@@ -136,7 +131,5 @@
         width: 100%;
         z-index: 5;
         padding: 6px;
-        /* height: 45vh; */
-
     }
 }

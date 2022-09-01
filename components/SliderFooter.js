@@ -5,15 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi";
 
 import style from "../styles/sliderFooter.module.css";
-import { render } from "react-dom";
 
 const SliderFooter = () => {
-  const refSlider = React.createRef();
-
-  // const componentDidMount = () => {
-  //   console.log(this.refSlider.current);
-  //   console.log(this.refSlider.current.props.children);
-  // };
+  const [state, setState] = React.useState(0);
 
   function SampleNextArrow(props) {
     const { onClick } = props;
@@ -32,6 +26,7 @@ const SliderFooter = () => {
       </div>
     );
   }
+
   const settings = {
     centerMode: true,
     className: "center",
@@ -43,9 +38,10 @@ const SliderFooter = () => {
 
     beforeChange: function (currentSlide, nextSlide) {
       console.log("before change", currentSlide, nextSlide);
-      return <ul className={style.numbers}>{currentSlide}</ul>;
+      setState(state + 1);
     },
     afterChange: function (currentSlide) {
+      // setState(state - 1);
       console.log("after change", currentSlide);
     },
 
@@ -72,7 +68,7 @@ const SliderFooter = () => {
   };
   return (
     <div className={style.slider__container}>
-      <Slider {...settings} ref={refSlider}>
+      <Slider {...settings} state={state}>
         <div className={style.slider__item}>
           <img className={style.img} src="slider/slider-1.png" alt="slider" />
           <img className={style.img__bg} src="slider/bg.png" alt="background" />
@@ -84,7 +80,7 @@ const SliderFooter = () => {
             </p>
           </div>
         </div>
-
+        {/* <p className={style.state}>{state}</p> */}
         <div className={style.slider__item}>
           <div className={style.slider__item_two}>
             <img
