@@ -25,6 +25,8 @@ body {
 }
 
 .content {
+    border-bottom: 1px solid #1e1a20;
+    opacity: 0.2;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
     max-height: 0;
@@ -33,6 +35,7 @@ body {
 .content__show {
     /* max-width: 600; */
     transition: all 0.5s ease-in-out;
+
 }
 
 
@@ -52,3 +55,7 @@ body {
     width: 11px !important;
     height: 11px !important;
 }
+
+/* slick-track {
+    width: 5000px !important;
+} */

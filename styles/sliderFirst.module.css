@@ -6,8 +6,6 @@
 
 .slider__item_one {
     margin: 0 auto;
-    /* position: relative; */
-    /* display: flex; */
     align-items: center;
     background: #FFBD9E;
     border-radius: 20px;
@@ -38,7 +36,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 98px;
-    /* flex-wrap: wrap; */
 }
 
 .slider__content {
@@ -92,6 +89,7 @@
 
 .slider__cover {
     margin: 0 60px;
+    position: relative;
 }
 
 .cover {
@@ -102,8 +100,10 @@
 
 .shadow {
     position: absolute;
-    top: 144px;
+    /* top: 144px; */
+    top: 90px;
 }
+
 
 @media screen and (max-width: 900px) {
     .slider__cover {
@@ -145,6 +145,15 @@
     }
 
     .shadow {
-        top: 320px;
+        /* top: 320px; */
+        /* right: -100px; */
+        right: -86px;
     }
+}
+
+@media screen and (max-width: 650px) {
+    .shadow {
+        right: -76px;
+    }
+
 }

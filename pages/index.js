@@ -10,6 +10,7 @@ import SliderFooter from "../components/SliderFooter";
 import Footer from "../components/Footer";
 
 import style from "../styles/index.module.css";
+// import Animated from "../components/Animated";
 
 const Home = () => {
   return (
@@ -17,16 +18,13 @@ const Home = () => {
       <Navigation />
       <MainSection />
       <Articles />
-
       <SliderMain />
-
       <OurTeam />
       <Title />
-
       <LogIn />
       <GetStartedInformation />
 
-      {/* <SliderFooter /> */}
+      <SliderFooter />
 
       <Footer />
     </div>

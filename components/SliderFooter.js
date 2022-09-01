@@ -5,8 +5,16 @@ import "slick-carousel/slick/slick-theme.css";
 import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi";
 
 import style from "../styles/sliderFooter.module.css";
+import { render } from "react-dom";
 
 const SliderFooter = () => {
+  const refSlider = React.createRef();
+
+  // const componentDidMount = () => {
+  //   console.log(this.refSlider.current);
+  //   console.log(this.refSlider.current.props.children);
+  // };
+
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
@@ -25,53 +33,99 @@ const SliderFooter = () => {
     );
   }
   const settings = {
+    centerMode: true,
+    className: "center",
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    // autoplay: true,
-    autoplaySpeed: 2000,
+
+    beforeChange: function (currentSlide, nextSlide) {
+      console.log("before change", currentSlide, nextSlide);
+      return <ul className={style.numbers}>{currentSlide}</ul>;
+    },
+    afterChange: function (currentSlide) {
+      console.log("after change", currentSlide);
+    },
+
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-
     responsive: [
-      //   {
-      //     breakpoint: 1100,
-      //     settings: {
-      //       slidesToShow: 3,
-      //       slidesToScroll: 1,
-      //     },
-      //   },
-      //   {
-      //     breakpoint: 400,
-      //     settings: {
-      //       slidesToShow: 1,
-      //       slidesToScroll: 1,
-      //     },
-      //   },
+      {
+        breakpoint: 1185,
+        settings: {
+          initialSlide: 0,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
     ],
   };
   return (
     <div className={style.slider__container}>
-      <Slider {...settings}>
-        {/* <div className={style.slider}> */}
-        {/* <div className={style.slider__item}> */}
-        <img className={style.img} src="slider/item-1.png" />
-        <div className={style.slider__text}>
-          <h3 className={style.slider__title}>Save water</h3>
-          <p className={style.description}>
-            Taking on the issue of ensuring access to safe water requires
-            workdwide effort.
-          </p>
+      <Slider {...settings} ref={refSlider}>
+        <div className={style.slider__item}>
+          <img className={style.img} src="slider/slider-1.png" alt="slider" />
+          <img className={style.img__bg} src="slider/bg.png" alt="background" />
+          <div className={style.slider__text_one}>
+            <h5>Save watter</h5>
+            <p>
+              Taking on the issue of ensuring access to safe water requires
+              workdwide effort.
+            </p>
+          </div>
         </div>
-        <img className={style.img} src="slider/item-2.png" />
-        <div className={style.slider__text}>
-          <h3 className={style.slider__title}>Plant tree</h3>
+
+        <div className={style.slider__item}>
+          <div className={style.slider__item_two}>
+            <img
+              className={style.img_slider_two}
+              src="slider/slider-2.png"
+              alt="slider"
+            />
+            <div className={style.slider__text_two}>
+              <h5>Plant trees</h5>
+            </div>
+          </div>
         </div>
-        <img className={style.img} src="slider/item-3.png" />
-        <div className={style.slider__text}>
-          <h3 className={style.slider__title}>Choose organic</h3>
+        <div className={style.slider__item}>
+          <img
+            className={style.img_slider__three}
+            src="slider/slider-3.png"
+            alt="slider"
+          />
+          <div className={style.slider__text_three}>
+            <h5>Save energy</h5>
+          </div>
+        </div>
+        <div className={style.slider__item}>
+          <img
+            className={style.img_slider__four}
+            src="slider/slider-4.png"
+            alt="slider"
+          />
+          <div className={style.slider__text_four}>
+            <h5>Avoid plastic</h5>
+          </div>
+        </div>
+        <div className={style.slider__item}>
+          <img
+            className={style.img_slider__five}
+            src="slider/slider-5.png"
+            alt="slider"
+          />
+          <div className={style.slider__text_five}>
+            <h5>Choose organic</h5>
+          </div>
         </div>
       </Slider>
     </div>

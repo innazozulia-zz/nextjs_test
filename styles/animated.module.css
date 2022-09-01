@@ -1,0 +1,163 @@
+.frame {
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #eee5f2;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+}
+
+.text {
+    z-index: 888;
+    position: relative;
+    display: flex;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.human {
+    position: relative;
+}
+
+.face {
+    width: 40px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -250%);
+    border-radius: 50%;
+}
+
+.hand {
+    height: 60px;
+    width: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+.hand__left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: translate(-200%, -85%) rotate(14deg);
+}
+
+.hand__left div {
+    height: 50px;
+    position: absolute;
+    top: -52px;
+    right: -40px;
+    transform-origin: 0 0;
+    transform: translate(-58%, 30%) rotate(-7deg);
+}
+
+.hand__right {
+    position: absolute;
+    top: 0px;
+    left: 22px;
+    transform-origin: 0 0;
+    transform: translate(110%, -62%) rotate(-70deg);
+    animation-name: hand-right-up;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate-reverse;
+}
+
+.hand__right div {
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: translate(-25%, 60%) rotate(-90deg);
+    animation-name: handUp;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.body {
+    width: 57.5px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.bottom {
+    width: 56px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+
+.left__left {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 48.5%;
+    height: 100%;
+    background: white;
+    border-radius: 0px 0px 20px 20px;
+    transform: translate(-106%, 0%);
+}
+
+.left__right {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 48.5%;
+    height: 100%;
+    background: white;
+    border-radius: 0px 0px 20px 20px;
+    transform: translate(8%, 0%);
+}
+
+@keyframes hand-right-up {
+
+    0%,
+    100% {
+        transform: translate(110%, -62%) rotate(-70deg);
+    }
+
+    50% {
+        transform: translate(90%, -60%) rotate(-90deg);
+    }
+}
+
+@keyframes handUp {
+
+    0%,
+    100% {
+        transform: translate(-25%, 60%) rotate(-90deg);
+    }
+
+    50% {
+        transform: translate(-30%, 65%) rotate(-120deg);
+    }
+}

@@ -4,11 +4,9 @@
 }
 
 .title {
-    /* margin-top: 32px; */
     display: flex;
     justify-content: space-between;
-    /* border-bottom: 1px solid #1E1A20; */
-
+    align-items: center;
 }
 
 .question h2 {
@@ -17,8 +15,8 @@
     line-height: 34px;
     color: #1E1A20;
     width: 436px;
-    /* margin-bottom: 16px; */
     margin-bottom: 32px;
+    margin-top: 24px;
 }
 
 .answer {
