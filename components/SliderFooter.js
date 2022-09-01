@@ -7,8 +7,6 @@ import { HiOutlineChevronRight, HiOutlineChevronLeft } from "react-icons/hi";
 import style from "../styles/sliderFooter.module.css";
 
 const SliderFooter = () => {
-  const [state, setState] = React.useState(0);
-
   function SampleNextArrow(props) {
     const { onClick } = props;
     return (
@@ -36,14 +34,13 @@ const SliderFooter = () => {
     slidesToScroll: 1,
     arrows: true,
 
-    beforeChange: function (currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-      setState(state + 1);
-    },
-    afterChange: function (currentSlide) {
-      // setState(state - 1);
-      console.log("after change", currentSlide);
-    },
+    // beforeChange: function (currentSlide, nextSlide) {
+    //   console.log("before change", currentSlide, nextSlide);
+    //   setState(state + 1);
+    // },
+    // afterChange: function (currentSlide) {
+    //   console.log("after change", currentSlide);
+    // },
 
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -80,7 +77,6 @@ const SliderFooter = () => {
             </p>
           </div>
         </div>
-        {/* <p className={style.state}>{state}</p> */}
         <div className={style.slider__item}>
           <div className={style.slider__item_two}>
             <img
