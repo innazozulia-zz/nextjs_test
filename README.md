@@ -10,8 +10,8 @@ Technologies: NextJS
 
 npm packages :
 
-1.styles:  module, react-icons;
-2.slider:  react-slick, react-carousel;
+- styles:  module, react-icons;
+- slider:  react-slick, react-carousel;
 
 
 Easter Egg : 
