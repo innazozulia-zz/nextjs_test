@@ -14,7 +14,7 @@ const Navigation = () => {
         onClick={() => setAnimation(!animation)}
         className={style.navigation}
       >
-        <img src="logo.png" atl="logo" />
+        <img src="Logo.png" atl="logo" />
       </div>
       <div
         className={navbar ? style.list__nav : style.nav__flex}
