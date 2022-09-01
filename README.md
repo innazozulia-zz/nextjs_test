@@ -10,5 +10,5 @@ Technologies: NextJS
 
 npm packages :
 
-styles:  module, react-icons;
-slider:  react-slick, react-carousel;
+-styles:  module, react-icons;
+-slider:  react-slick, react-carousel;
