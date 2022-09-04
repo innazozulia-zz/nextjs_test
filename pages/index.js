@@ -22,7 +22,8 @@ const Home = () => {
       <Title />
       <LogIn />
       <GetStartedInformation />
-      <SliderFooter />
+
+      {/* <SliderFooter /> */}
       <Footer />
     </div>
   );
